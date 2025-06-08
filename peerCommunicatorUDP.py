@@ -104,7 +104,7 @@ class MsgHandler(threading.Thread):
         msgPack = pickle.dumps(newMsg)
         sendSocket.sendto(msgPack, (PEERS[msg[0]], PEER_UDP_PORT)) # send ack to sender
       
-      elif msg[3] == 'ack':
+      elif (msg[3] or msg[4] or msg[2] or msg[1]) == 'ack':
         self.ack.append((msg[0], msg[1], msg[2])) # (process, msg, clock)
         # Search menssage
         for i in range(len(self.pending)):
