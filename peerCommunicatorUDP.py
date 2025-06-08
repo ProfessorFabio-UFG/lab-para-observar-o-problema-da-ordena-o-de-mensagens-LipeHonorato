@@ -1,4 +1,3 @@
-from operator import itemgetter
 from socket  import *
 from constMP import * #-
 import threading
@@ -6,6 +5,7 @@ import random
 import time
 import pickle
 from requests import get
+import heapq
 
 #handShakes = [] # not used; only if we need to check whose handshake is missing
 
@@ -13,6 +13,14 @@ from requests import get
 handShakeCount = 0
 
 PEERS = []
+
+# Variável global para o relógio de Lamport
+lamport_clock = 0
+# Fila de prioridade para armazenar mensagens recebidas
+# Os elementos serão tuplas: (timestamp, ID_remetente, número_mensagem)
+message_queue = []
+# Lock para proteger o acesso ao relógio de Lamport e à fila de mensagens
+clock_and_queue_lock = threading.Lock()
 
 # UDP sockets to send and receive data messages:
 # Create send socket
@@ -62,16 +70,14 @@ class MsgHandler(threading.Thread):
   def __init__(self, sock):
     threading.Thread.__init__(self)
     self.sock = sock
-    self.clock = 0 # Lamport's clock
-    self.pending = [] # Queue with pending messages
-    self.ack = [] # List of acks received 
 
   def run(self):
     print('Handler is ready. Waiting for the handshakes...')
     
     #global handShakes
     global handShakeCount
-
+    global lamport_clock # Acessa o relógio de Lamport
+    
     logList = []
     
     # Wait until handshakes are received from all other processes
@@ -81,91 +87,78 @@ class MsgHandler(threading.Thread):
       msg = pickle.loads(msgPack)
       #print ('########## unpickled msgPack: ', msg)
       if msg[0] == 'READY':
-
+        # Atualiza o relógio de Lamport ao receber um handshake
+        with clock_and_queue_lock:
+          lamport_clock = max(lamport_clock, msg[2]) + 1 # msg[2] será o timestamp do handshake
         # To do: send reply of handshake and wait for confirmation
 
         handShakeCount = handShakeCount + 1
         #handShakes[msg[1]] = 1
         print('--- Handshake received: ', msg[1])
 
-
     print('Secondary Thread: Received all handshakes. Entering the loop to receive messages.')
 
     stopCount=0 
+    
     while True:                
-      msgPack = self.sock.recv(32768)   # receive data from client
+      msgPack = self.sock.recv(1024)   # receive data from client
       msg = pickle.loads(msgPack)
-      self.clock = max(self.clock, msg[2]) + 1 # update Lamport's clock
-        
-      if msg[3] == 'data':
-        print(">> RECEBIDO DATA")
-        self.pending.append(msg) # add msg to queue
-        self.clock += 1 # update clock
-        newMsg = (msg[0], msg[1], self.clock, 'ack')
-        msgPack = pickle.dumps(newMsg)
-        sendSocket.sendto(msgPack, (PEERS[msg[0]], PEER_UDP_PORT)) # send ack to sender
       
-      elif msg[3] == 'ack':
-        print(">> RECEBIDO ACK")
-        self.ack.append((msg[0], msg[1], msg[2])) # (process, msg, clock)
-        # Search menssage
-        for i in range(len(self.pending)):
-          if msg[0] == self.pending[i][0] and msg[1] == self.pending[i][1]:
-            position = i
-            break
-
-        if msg[0] == myself:
-          if self.ack.count((msg[0], msg[1], msg[2])) == N: # all acks arrived
-            j = 0
-            while j <= N: # define clock
-              if self.ack[j] == (msg[0], msg[1], msg[2]):
-                j += 1
-                if j == 1:
-                  maxClock = self.ack[j][2]
-                elif maxClock < self.ack[j][2]:
-                  maxClock = self.ack[j][2]
-
-            newMsg = (msg[0], msg[1], maxClock, 'final') # 'final' indicates that the final clock has been decided
-            msgPack = pickle.dumps(newMsg)
-            self.clock += 1
-            for addrToSend in PEERS: # send the final clock to all peers
-              sendSocket.sendto(msgPack, (addrToSend,PEER_UDP_PORT))
-      
-      elif msg[3] == 'final':
-        print(">> RECEBIDO FINAL")
-        for i in range(len(self.pending)):
-          if msg[0] == self.pending[i][0] and msg[1] == self.pending[i][1]:
-            position = i
-            break
-            
-        self.pending[position] = (msg[0], msg[1], msg[2], msg[3])
-
-        print('Message ' + str(msg[1]) + ' from process ' + str(msg[0]))
-        logList.append(msg)
-      
-      elif msg[3] == 'stop':
-        print(">> RECEBIDO STOP")
+      if msg[0] == -1:   # count the 'stop' messages from the other processes
         stopCount = stopCount + 1
         if stopCount == N:
           break  # stop loop when all other processes have finished
-          
-      # Write log file
-      logFile = open('logfile'+str(myself)+'.log', 'w')
-      logFile.writelines(str(logList))
-      logFile.close()
-            
-      # Send the list of messages to the server (using a TCP socket) for comparison
-      print('Sending the list of messages to the server for comparison...')
-      clientSock = socket(AF_INET, SOCK_STREAM)
-      clientSock.connect((SERVER_ADDR, SERVER_PORT))
-      msgPack = pickle.dumps(logList)
-      clientSock.send(msgPack)
-      clientSock.close()
+      else:
+        # msg[0]: ID do remetente, msg[1]: número da mensagem, msg[2]: timestamp de Lamport
+        sender_id, msg_number, msg_timestamp = msg[0], msg[1], msg[2]
+                
+        with clock_and_queue_lock:
+          # Atualiza o relógio de Lamport
+          lamport_clock = max(lamport_clock, msg_timestamp) + 1
+          # Adiciona a mensagem à fila de prioridade
+          # Usamos o timestamp como prioridade principal e o ID do remetente como desempate
+          heapq.heappush(message_queue, (msg_timestamp, sender_id, msg_number))
+                
+        print(f'Received message (LC: {msg_timestamp}): {msg_number} from process {sender_id}. Queue size: {len(message_queue)}')
       
-      # Reset the handshake counter
-      handShakeCount = 0
+      # Tenta entregar as mensagens ordenadamente
+      self.deliver_ordered_messages(logList)
+    
+    # Garante que todas as mensagens na fila sejam entregues antes de finalizar
+    while message_queue:
+      self.deliver_ordered_messages(logList)
 
-      
+    # Write log file
+    logFile = open('logfile'+str(myself)+'.log', 'w')
+    logFile.writelines(str(logList))
+    logFile.close()
+    
+    # Send the list of messages to the server (using a TCP socket) for comparison
+    print('Sending the list of messages to the server for comparison...')
+    clientSock = socket(AF_INET, SOCK_STREAM)
+    clientSock.connect((SERVER_ADDR, SERVER_PORT))
+    msgPack = pickle.dumps(logList)
+    clientSock.send(msgPack)
+    clientSock.close()
+    
+    # Reset the handshake counter
+    handShakeCount = 0
+
+    exit(0)
+
+  def deliver_ordered_messages(self, logList):
+    global lamport_clock
+    global N # N é o número total de peers, assumimos que está acessível
+
+    while message_queue:
+      # Pega a mensagem com o menor timestamp da fila (não remove ainda)
+      next_msg_timestamp, next_msg_sender_id, next_msg_number = message_queue[0]
+    
+      with clock_and_queue_lock:
+        popped_msg = heapq.heappop(message_queue)
+
+      logList.append((popped_msg[1], popped_msg[2])) # Armazena (ID_remetente, número_mensagem)
+      print(f'DELIVERED: Message {popped_msg[2]} from process {popped_msg[1]} (LC: {popped_msg[0]})')
 
 # Function to wait for start signal from comparison server:
 def waitToStart():
@@ -206,7 +199,9 @@ while 1:
   #        Send confirmation of reply
   for addrToSend in PEERS:
     print('Sending handshake to ', addrToSend)
-    msg = ('READY', myself)
+    with clock_and_queue_lock:
+      lamport_clock += 1 # Incrementa o relógio antes de enviar
+      msg = ('READY', myself, lamport_clock) # Inclui o timestamp de Lamport
     msgPack = pickle.dumps(msg)
     sendSocket.sendto(msgPack, (addrToSend,PEER_UDP_PORT))
     #data = recvSocket.recvfrom(128) # Handshadke confirmations have not yet been implemented
@@ -220,16 +215,20 @@ while 1:
   for msgNumber in range(0, nMsgs):
     # Wait some random time between successive messages
     time.sleep(random.randrange(10,100)/1000)
-    msgHandler.clock += 1 # update Lamport's clock
-    msg = (myself, msgNumber, msgHandler.clock, 'data') # add clock and type
+    with clock_and_queue_lock:
+      lamport_clock += 1 # Incrementa o relógio antes de enviar
+      msg = (myself, msgNumber, lamport_clock) # Inclui o timestamp de Lamport
+        
     msgPack = pickle.dumps(msg)
-    msgHandler.pending.append(msg) ## add msg to queue
     for addrToSend in PEERS:
       sendSocket.sendto(msgPack, (addrToSend,PEER_UDP_PORT))
-      print('Sent message ' + str(msgNumber))
+      print(f'Sent message {msgNumber} (LC: {lamport_clock})')
 
   # Tell all processes that I have no more messages to send
   for addrToSend in PEERS:
-    msg = (-1, -1, -1, 'stop')
+    with clock_and_queue_lock:
+      lamport_clock += 1 # Incrementa o relógio ao enviar a mensagem de parada
+      msg = (-1,-1, lamport_clock) # Inclui o timestamp de Lamport
+
     msgPack = pickle.dumps(msg)
     sendSocket.sendto(msgPack, (addrToSend,PEER_UDP_PORT))
