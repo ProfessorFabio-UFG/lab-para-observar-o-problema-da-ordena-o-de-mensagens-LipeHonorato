@@ -98,13 +98,14 @@ class MsgHandler(threading.Thread):
       self.clock = max(self.clock, msg[2]) + 1 # update Lamport's clock
         
       if msg[3] == 'data':
+        print("oi td bem")
         self.pending.append(msg) # add msg to queue
         self.clock += 1 # update clock
         newMsg = (msg[0], msg[1], self.clock, 'ack')
         msgPack = pickle.dumps(newMsg)
         sendSocket.sendto(msgPack, (PEERS[msg[0]], PEER_UDP_PORT)) # send ack to sender
       
-      elif (msg[3] or msg[4] or msg[2] or msg[1]) == 'ack':
+      elif msg[3] == 'ack':
         self.ack.append((msg[0], msg[1], msg[2])) # (process, msg, clock)
         # Search menssage
         for i in range(len(self.pending)):
