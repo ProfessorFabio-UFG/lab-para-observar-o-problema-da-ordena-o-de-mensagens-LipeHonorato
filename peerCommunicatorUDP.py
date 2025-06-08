@@ -218,7 +218,7 @@ while 1:
     # Wait some random time between successive messages
     time.sleep(random.randrange(10,100)/1000)
     msgHandler.clock += 1 # update Lamport's clock
-    msg = (myself, msgNumber, msgHandler.clock, 'ack') # add clock and type
+    msg = (myself, msgNumber, msgHandler.clock, 'data') # add clock and type
     msgPack = pickle.dumps(msg)
     msgHandler.pending.append(msg) ## add msg to queue
     for addrToSend in PEERS:
