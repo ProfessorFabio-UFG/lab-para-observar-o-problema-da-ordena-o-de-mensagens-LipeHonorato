@@ -162,7 +162,7 @@ class MsgHandler(threading.Thread):
       # Reset the handshake counter
       handShakeCount = 0
 
-      exit(0)
+      
 
 # Function to wait for start signal from comparison server:
 def waitToStart():
