@@ -7,7 +7,24 @@ import pickle
 from requests import get
 import heapq # Usaremos um heap para a fila de prioridade
 
-# ... (código existente) ...
+#handShakes = [] # not used; only if we need to check whose handshake is missing
+
+# Counter to make sure we have received handshakes from all other processes
+handShakeCount = 0
+
+PEERS = []
+
+# UDP sockets to send and receive data messages:
+# Create send socket
+sendSocket = socket(AF_INET, SOCK_DGRAM)
+#Create and bind receive socket
+recvSocket = socket(AF_INET, SOCK_DGRAM)
+recvSocket.bind(('0.0.0.0', PEER_UDP_PORT))
+
+# TCP socket to receive start signal from the comparison server:
+serverSock = socket(AF_INET, SOCK_STREAM)
+serverSock.bind(('0.0.0.0', PEER_TCP_PORT))
+serverSock.listen(1)
 
 # Variável global para o relógio de Lamport
 lamport_clock = 0
@@ -17,7 +34,36 @@ message_queue = []
 # Lock para proteger o acesso ao relógio de Lamport e à fila de mensagens
 clock_and_queue_lock = threading.Lock()
 
-# ... (código existente) ...
+def get_public_ip():
+  ipAddr = get('https://api.ipify.org').content.decode('utf8')
+  print('My public IP address is: {}'.format(ipAddr))
+  return ipAddr
+
+# Function to register this peer with the group manager
+def registerWithGroupManager():
+  clientSock = socket(AF_INET, SOCK_STREAM)
+  print ('Connecting to group manager: ', (GROUPMNGR_ADDR,GROUPMNGR_TCP_PORT))
+  clientSock.connect((GROUPMNGR_ADDR,GROUPMNGR_TCP_PORT))
+  ipAddr = get_public_ip()
+  req = {"op":"register", "ipaddr":ipAddr, "port":PEER_UDP_PORT}
+  msg = pickle.dumps(req)
+  print ('Registering with group manager: ', req)
+  clientSock.send(msg)
+  clientSock.close()
+
+def getListOfPeers():
+  clientSock = socket(AF_INET, SOCK_STREAM)
+  print ('Connecting to group manager: ', (GROUPMNGR_ADDR,GROUPMNGR_TCP_PORT))
+  clientSock.connect((GROUPMNGR_ADDR,GROUPMNGR_TCP_PORT))
+  req = {"op":"list"}
+  msg = pickle.dumps(req)
+  print ('Getting list of peers from group manager: ', req)
+  clientSock.send(msg)
+  msg = clientSock.recv(2048)
+  PEERS = pickle.loads(msg)
+  print ('Got list of peers: ', PEERS)
+  clientSock.close()
+  return PEERS
 
 class MsgHandler(threading.Thread):
     def __init__(self, sock):

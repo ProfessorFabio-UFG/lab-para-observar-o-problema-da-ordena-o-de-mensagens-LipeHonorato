@@ -1,358 +1,235 @@
-lipe
-lipe.h
-Em voz
-
-Lisa — 27/12/2024 14:31
-GSXB7OA
-STANDWITHMAVUIKA
-lipe — 27/12/2024 16:07
-ja volto se eu nao estiver aqui
-Lisa — 27/12/2024 16:19
-okay okay
-esperando
-🫡
-lipe — 27/12/2024 16:56
-@Lisa pera ai
-Lisa — 27/12/2024 16:56
-ok
-lipe — 04/01/2025 11:17
-m!help
-.p oasis wonderwall
-Jockie Music (2)
-APP
- — 04/01/2025 11:18
-:deezer: ​ Started playing Wonderwall by Oasis
-lipe — 04/01/2025 11:18
-.s
-Jockie Music (2)
-APP
- — 04/01/2025 11:18
-Wonderwall by Oasis has been skipped
-Jockie Music (2)
-APP
- — 04/01/2025 11:18
-Did you know you now get better audio quality with any premium tier https://www.patreon.com/Jockie!
-There are no more tracks
-Started playing Wonderwall Cover - Rakin
-There are no more tracks
-Jockie Music (2)
-APP
- — 04/01/2025 11:25
-No tracks have been playing for the past 3 minutes, leaving :wave:
-
-This can be disabled by using the premium command 24/7, for more information check out the perks command!
-lipe — 04/01/2025 16:55
-Aqui estão todos os códigos de resgate válidos em Janeiro de 2025: 
-
-
-
-MAVUIKAWISHES - x30 Gema Essencial e x1 Hino da Chama Reunida
-
-WAM5UWWU28NV - x60 Gemas Essenciais, x5 EXP do Aventureiro
-
-WEAV365PI953 - 10.000 Mora, x3 Baga Quenepa, x10 EXP do Aventureiro, x5 Minério de Refinamento Fino
-
-GENSHINGIFT - x50 Gemas Essenciais e x3 EXP do Herói
-Lisa — 04/01/2025 17:49
-https://www.youtube.com/watch?v=H-imrCuHlK4
-YouTube
-WoW Quests
-All Yellow Obsidian Fragment Locations Genshin Impact
-Imagem
-Lisa — 04/01/2025 18:02
-https://www.youtube.com/watch?v=_8ai7f7f6oM
-YouTube
-WoW Quests
-All Green Obsidian Fragment Locations Genshin Impact
-Imagem
-https://www.youtube.com/watch?v=Rnb1vr31a-c
-YouTube
-ZaFrostPet
-All Purple Obsidian Fragment Ring Locations Genshin Impact
-Imagem
-https://www.youtube.com/watch?v=B0mC_MeMtcA
-YouTube
-ZaFrostPet
-All Crimson Obsidian Fragment Ring Locations Genshin Impact
-Imagem
-lipe — 10/01/2025 10:23
-jaja eu entro se eu demorar um pouco
-Lisa — 10/01/2025 10:26
-okay
-HNYM2GAQ8PQ9
-FORNATLAN
-Lisa — 10/01/2025 13:01
-@lipe  alguém por ai?
-lipe — 10/01/2025 13:01
-nao
-Lisa — 10/01/2025 13:01
-kkkkkkkkk
-Lisa — 10/01/2025 16:41
-hello
-lipe — 10/01/2025 16:43
-código: WEAV365PI953 / Mavuikawishes
-Lisa — 10/01/2025 18:56
-https://www.youtube.com/watch?v=FfwaKmEHpMw&list=PL37pOAtZLRFH-OmzeZ81M_S5T2j3tyIXO&index=18
-YouTube
-Japeta
-DE UM CASO PARA O OUTRO - NATLAN 5.2
-Imagem
-lipe — 10/01/2025 19:51
-consegui os baus
-lipe — 20/01/2025 12:02
-Imagem
-lipe — 20/01/2025 15:21
-vou sair
-em 3
-lipe — 27/02/2025 13:00
-2min
-Lisa — 27/02/2025 13:02
-acho q já foi
-kkkkkkk
-lipe — 27/02/2025 13:03
-mentira
-Lisa — 27/02/2025 13:03
-rip
-Lisa — 27/02/2025 16:40
-alguém por ai?
-0.0
-lipe — 27/02/2025 17:56
-https://www.instagram.com/reel/DGS0F85hA9I/?igsh=MTFxZ2xjcmYwbnQwZw==
-kextay
-Kira mermaid’s swimming milestones @happyfishswimschool under Coach @jianyongtan’s guidance! 🧜🏻‍♀️
-
-#babyswimming #kiraweejing
-#happyfishswimschool
-Likes
-4282851
-
-Instagram
-Lisa — 03/05/2025 18:57
-https://x.com/intrinseca/status/1918364959517606238
-Intrínseca (@intrinseca) on X
-Confira o sorteio da semana com as Fantasias da Intrín! 📚💫
-
-Siga o nosso perfil, dê RT neste post PUBLICAMENTE e preencha o formulário:
-https://t.co/194kCWQZLP
-
-O resultado será anunciado no dia 06/05, terça-feira. Boa sorte!
-Intrínseca (@intrinseca) on X
-
-X•02/05/2025 15:00
-livro: A Curandeira de Zalindov
-lipe — 24/05/2025 17:17
-Exemplo telas
-
-https://www.figma.com/community/file/1488247467192458684 
-Exemplo máquinas ATM
-https://www.behance.net/gallery/212666505/FastAccessATM(ATM-Withdrawals-Cardless-through-app)?tracking_source=search_projects%7Catm+design+figma 
-Behance
-Sonal Chavan
-FastAccessATM(ATM Withdrawals Cardless through app) - Sonal Chavan
-FastAccessATM(ATM Withdrawals Cardless through app)
-FastAccessATM(ATM Withdrawals Cardless through app) - Sonal Chavan
-lipe — 24/05/2025 17:28
-Outro exemplo de telas:
-https://www.figma.com/community/file/1319690318332861585
-Lisa — 26/05/2025 20:38
-https://www.awsacademy.com/vforcesite/LMS_Login
-lipe — 11:57
-1 segundo
-Lisa — 12:00
-from socket import *
-from constMP import *
-import threading
-import random
-import time
-import pickle
-Expandir
-message.txt
-9 KB
-﻿
-from socket import *
-from constMP import *
+from operator import itemgetter
+from socket  import *
+from constMP import * #-
 import threading
 import random
 import time
 import pickle
 from requests import get
-import heapq # Usaremos um heap para a fila de prioridade
 
-# ... (código existente) ...
+#handShakes = [] # not used; only if we need to check whose handshake is missing
 
-# Variável global para o relógio de Lamport
-lamport_clock = 0
-# Fila de prioridade para armazenar mensagens recebidas
-# Os elementos serão tuplas: (timestamp, ID_remetente, número_mensagem)
-message_queue = []
-# Lock para proteger o acesso ao relógio de Lamport e à fila de mensagens
-clock_and_queue_lock = threading.Lock()
+# Counter to make sure we have received handshakes from all other processes
+handShakeCount = 0
 
-# ... (código existente) ...
+PEERS = []
+
+# UDP sockets to send and receive data messages:
+# Create send socket
+sendSocket = socket(AF_INET, SOCK_DGRAM)
+#Create and bind receive socket
+recvSocket = socket(AF_INET, SOCK_DGRAM)
+recvSocket.bind(('0.0.0.0', PEER_UDP_PORT))
+
+# TCP socket to receive start signal from the comparison server:
+serverSock = socket(AF_INET, SOCK_STREAM)
+serverSock.bind(('0.0.0.0', PEER_TCP_PORT))
+serverSock.listen(1)
+
+
+def get_public_ip():
+  ipAddr = get('https://api.ipify.org').content.decode('utf8')
+  print('My public IP address is: {}'.format(ipAddr))
+  return ipAddr
+
+# Function to register this peer with the group manager
+def registerWithGroupManager():
+  clientSock = socket(AF_INET, SOCK_STREAM)
+  print ('Connecting to group manager: ', (GROUPMNGR_ADDR,GROUPMNGR_TCP_PORT))
+  clientSock.connect((GROUPMNGR_ADDR,GROUPMNGR_TCP_PORT))
+  ipAddr = get_public_ip()
+  req = {"op":"register", "ipaddr":ipAddr, "port":PEER_UDP_PORT}
+  msg = pickle.dumps(req)
+  print ('Registering with group manager: ', req)
+  clientSock.send(msg)
+  clientSock.close()
+
+def getListOfPeers():
+  clientSock = socket(AF_INET, SOCK_STREAM)
+  print ('Connecting to group manager: ', (GROUPMNGR_ADDR,GROUPMNGR_TCP_PORT))
+  clientSock.connect((GROUPMNGR_ADDR,GROUPMNGR_TCP_PORT))
+  req = {"op":"list"}
+  msg = pickle.dumps(req)
+  print ('Getting list of peers from group manager: ', req)
+  clientSock.send(msg)
+  msg = clientSock.recv(2048)
+  PEERS = pickle.loads(msg)
+  print ('Got list of peers: ', PEERS)
+  clientSock.close()
+  return PEERS
 
 class MsgHandler(threading.Thread):
-    def __init__(self, sock):
-        threading.Thread.__init__(self)
-        self.sock = sock
+  def __init__(self, sock):
+    threading.Thread.__init__(self)
+    self.sock = sock
+    self.clock = 0 # Lamport's clock
+    self.pending = [] # Queue with pending messages
+    self.ack = [] # List of acks received 
 
-    def run(self):
-        print('Handler is ready. Waiting for the handshakes...')
+  def run(self):
+    print('Handler is ready. Waiting for the handshakes...')
+    
+    #global handShakes
+    global handShakeCount
+
+    logList = []
+    
+    # Wait until handshakes are received from all other processes
+    # (to make sure that all processes are synchronized before they start exchanging messages)
+    while handShakeCount < N:
+      msgPack = self.sock.recv(1024)
+      msg = pickle.loads(msgPack)
+      #print ('########## unpickled msgPack: ', msg)
+      if msg[0] == 'READY':
+
+        # To do: send reply of handshake and wait for confirmation
+
+        handShakeCount = handShakeCount + 1
+        #handShakes[msg[1]] = 1
+        print('--- Handshake received: ', msg[1])
+
+
+    print('Secondary Thread: Received all handshakes. Entering the loop to receive messages.')
+
+    stopCount=0 
+    while True:                
+      msgPack = self.sock.recv(32768)   # receive data from client
+      msg = pickle.loads(msgPack)
+      self.clock = max(self.clock, msg[2]) + 1 # update Lamport's clock
         
-        global handShakeCount
-        global lamport_clock # Acessa o relógio de Lamport
-        
-        logList = []
-        
-        while handShakeCount < N:
-            msgPack = self.sock.recv(1024)
-            msg = pickle.loads(msgPack)
-            if msg[0] == 'READY':
-                # Atualiza o relógio de Lamport ao receber um handshake
-                with clock_and_queue_lock:
-                    lamport_clock = max(lamport_clock, msg[2]) + 1 # msg[2] será o timestamp do handshake
-                
-                handShakeCount = handShakeCount + 1
-                print('--- Handshake received: ', msg[1], ' with Lamport Clock: ', msg[2])
+      if msg[3] == 'data':
+        print(">> RECEBIDO DATA")
+        self.pending.append(msg) # add msg to queue
+        self.clock += 1 # update clock
+        newMsg = (msg[0], msg[1], self.clock, 'ack')
+        msgPack = pickle.dumps(newMsg)
+        sendSocket.sendto(msgPack, (PEERS[msg[0]], PEER_UDP_PORT)) # send ack to sender
+      
+      elif msg[3] == 'ack':
+        print(">> RECEBIDO ACK")
+        self.ack.append((msg[0], msg[1], msg[2])) # (process, msg, clock)
+        # Search menssage
+        for i in range(len(self.pending)):
+          if msg[0] == self.pending[i][0] and msg[1] == self.pending[i][1]:
+            position = i
+            break
 
-        print('Secondary Thread: Received all handshakes. Entering the loop to receive messages.')
+        if msg[0] == myself:
+          if self.ack.count((msg[0], msg[1], msg[2])) == N: # all acks arrived
+            j = 0
+            while j <= N: # define clock
+              if self.ack[j] == (msg[0], msg[1], msg[2]):
+                j += 1
+                if j == 1:
+                  maxClock = self.ack[j][2]
+                elif maxClock < self.ack[j][2]:
+                  maxClock = self.ack[j][2]
 
-        stopCount = 0 
-        # Loop principal para receber e processar mensagens
-        while True:
-            msgPack = self.sock.recv(1024)
-            msg = pickle.loads(msgPack)
-
-            if msg[0] == -1: # Mensagem de parada
-                stopCount = stopCount + 1
-                if stopCount == N:
-                    break
-            else:
-                # msg[0]: ID do remetente, msg[1]: número da mensagem, msg[2]: timestamp de Lamport
-                sender_id, msg_number, msg_timestamp = msg[0], msg[1], msg[2]
-                
-                with clock_and_queue_lock:
-                    # Atualiza o relógio de Lamport
-                    lamport_clock = max(lamport_clock, msg_timestamp) + 1
-                    # Adiciona a mensagem à fila de prioridade
-                    # Usamos o timestamp como prioridade principal e o ID do remetente como desempate
-                    heapq.heappush(message_queue, (msg_timestamp, sender_id, msg_number))
-                
-                print(f'Received message (LC: {msg_timestamp}): {msg_number} from process {sender_id}. Queue size: {len(message_queue)}')
-
-                # Tenta entregar as mensagens ordenadamente
-                self.deliver_ordered_messages(logList)
-        
-        # Garante que todas as mensagens na fila sejam entregues antes de finalizar
-        while message_queue:
-            self.deliver_ordered_messages(logList)
-
-        # Write log file
-        logFile = open('logfile'+str(myself)+'.log', 'w')
-        # As mensagens em logList já estarão ordenadas
-        logFile.writelines(str(logList))
-        logFile.close()
-        
-        # ... (código existente para enviar log para o servidor) ...
-        
-        handShakeCount = 0
-        exit(0)
-
-    def deliver_ordered_messages(self, logList):
-        global lamport_clock
-        global N # N é o número total de peers, assumimos que está acessível
-        
-        # O critério de entrega para multicasting totalmente ordenado com Lamport
-        # é que você só pode entregar uma mensagem (m, T) se:
-        # 1. (m, T) é a mensagem com o menor timestamp na sua fila.
-        # 2. Para cada outro processo p, você já recebeu uma mensagem de p com
-        #    um timestamp maior ou igual a T (garantindo que p não enviará
-        #    nada com um timestamp menor que T que deveria ter sido entregue antes).
-        # Para simplificar, neste exemplo, vamos entregar a mensagem com o menor timestamp
-        # assim que ela chegar, o que é uma aproximação para sistemas menores.
-        # Em um sistema distribuído real, o segundo critério é mais complexo e
-        # geralmente envolve um mecanismo de "ACKs" ou informações de "vetor de relógios"
-        # para saber o estado dos outros processos.
-
-        # Para uma implementação mais robusta, você precisaria de um mecanismo
-        # para saber que *todos* os peers já processaram mensagens com timestamps menores
-        # antes de entregar uma mensagem com um timestamp T.
-        # No entanto, para o propósito deste exercício, vamos focar na ordenação
-        # baseada apenas no timestamp e na entrega da menor mensagem disponível.
-
-        while message_queue:
-            # Pega a mensagem com o menor timestamp da fila (não remove ainda)
-            next_msg_timestamp, next_msg_sender_id, next_msg_number = message_queue[0]
-
-            # Simplesmente remove e processa a mensagem com o menor timestamp.
-            # Isso é uma simplificação. A condição real para entrega total seria
-            # mais complexa e envolveria a garantia de que não há mensagens com
-            # timestamps menores em trânsito de outros processos.
-            with clock_and_queue_lock:
-                popped_msg = heapq.heappop(message_queue)
+            newMsg = (msg[0], msg[1], maxClock, 'final') # 'final' indicates that the final clock has been decided
+            msgPack = pickle.dumps(newMsg)
+            self.clock += 1
+            for addrToSend in PEERS: # send the final clock to all peers
+              sendSocket.sendto(msgPack, (addrToSend,PEER_UDP_PORT))
+      
+      elif msg[3] == 'final':
+        print(">> RECEBIDO FINAL")
+        for i in range(len(self.pending)):
+          if msg[0] == self.pending[i][0] and msg[1] == self.pending[i][1]:
+            position = i
+            break
             
-            # Formato do log original: (ID_remetente, número_mensagem)
-            # Para o log, podemos querer armazenar também o timestamp de Lamport.
-            # Por simplicidade, vamos manter o formato original do log (msg[0], msg[1])
-            # mas garantindo que ele seja adicionado na ordem correta.
-            logList.append((popped_msg[1], popped_msg[2])) # Armazena (ID_remetente, número_mensagem)
-            print(f'DELIVERED: Message {popped_msg[2]} from process {popped_msg[1]} (LC: {popped_msg[0]})')
+        self.pending[position] = (msg[0], msg[1], msg[2], msg[3])
 
+        print('Message ' + str(msg[1]) + ' from process ' + str(msg[0]))
+        logList.append(msg)
+      
+      elif msg[3] == 'stop':
+        print(">> RECEBIDO STOP")
+        stopCount = stopCount + 1
+        if stopCount == N:
+          break  # stop loop when all other processes have finished
+          
+      # Write log file
+      logFile = open('logfile'+str(myself)+'.log', 'w')
+      logFile.writelines(str(logList))
+      logFile.close()
+            
+      # Send the list of messages to the server (using a TCP socket) for comparison
+      print('Sending the list of messages to the server for comparison...')
+      clientSock = socket(AF_INET, SOCK_STREAM)
+      clientSock.connect((SERVER_ADDR, SERVER_PORT))
+      msgPack = pickle.dumps(logList)
+      clientSock.send(msgPack)
+      clientSock.close()
+      
+      # Reset the handshake counter
+      handShakeCount = 0
 
-# ... (código existente) ...
+      
 
-# Modifique o envio de handshakes e mensagens de dados para incluir o relógio de Lamport.
-# A função `waitToStart` não precisa ser modificada para incluir o relógio.
+# Function to wait for start signal from comparison server:
+def waitToStart():
+  (conn, addr) = serverSock.accept()
+  msgPack = conn.recv(1024)
+  msg = pickle.loads(msgPack)
+  myself = msg[0]
+  nMsgs = msg[1]
+  conn.send(pickle.dumps('Peer process '+str(myself)+' started.'))
+  conn.close()
+  return (myself,nMsgs)
 
 # From here, code is executed when program starts:
 registerWithGroupManager()
 while 1:
-    print('Waiting for signal to start...')
-    (myself, nMsgs) = waitToStart()
-    print('I am up, and my ID is: ', str(myself))
+  print('Waiting for signal to start...')
+  (myself, nMsgs) = waitToStart()
+  print('I am up, and my ID is: ', str(myself))
 
-    if nMsgs == 0:
-        print('Terminating.')
-        exit(0)
+  if nMsgs == 0:
+    print('Terminating.')
+    exit(0)
 
-    time.sleep(5)
+  # Wait for other processes to be ready
+  # To Do: fix bug that causes a failure when not all processes are started within this time
+  # (fully started processes start sending data messages, which the others try to interpret as control messages) 
+  time.sleep(5)
 
-    msgHandler = MsgHandler(recvSocket)
-    msgHandler.start()
-    print('Handler started')
+  # Create receiving message handler
+  msgHandler = MsgHandler(recvSocket)
+  msgHandler.start()
+  print('Handler started')
 
-    PEERS = getListOfPeers()
-    
-    # Send handshakes
+  PEERS = getListOfPeers()
+  
+  # Send handshakes
+  # To do: Must continue sending until it gets a reply from each process
+  #        Send confirmation of reply
+  for addrToSend in PEERS:
+    print('Sending handshake to ', addrToSend)
+    msg = ('READY', myself)
+    msgPack = pickle.dumps(msg)
+    sendSocket.sendto(msgPack, (addrToSend,PEER_UDP_PORT))
+    #data = recvSocket.recvfrom(128) # Handshadke confirmations have not yet been implemented
+
+  print('Main Thread: Sent all handshakes. handShakeCount=', str(handShakeCount))
+
+  while (handShakeCount < N):
+    pass  # find a better way to wait for the handshakes
+
+  # Send a sequence of data messages to all other processes 
+  for msgNumber in range(0, nMsgs):
+    # Wait some random time between successive messages
+    time.sleep(random.randrange(10,100)/1000)
+    msgHandler.clock += 1 # update Lamport's clock
+    msg = (myself, msgNumber, msgHandler.clock, 'data') # add clock and type
+    msgPack = pickle.dumps(msg)
+    msgHandler.pending.append(msg) ## add msg to queue
     for addrToSend in PEERS:
-        print('Sending handshake to ', addrToSend)
-        with clock_and_queue_lock:
-            lamport_clock += 1 # Incrementa o relógio antes de enviar
-            msg = ('READY', myself, lamport_clock) # Inclui o timestamp de Lamport
-        msgPack = pickle.dumps(msg)
-        sendSocket.sendto(msgPack, (addrToSend,PEER_UDP_PORT))
+      sendSocket.sendto(msgPack, (addrToSend,PEER_UDP_PORT))
+      print('Sent message ' + str(msgNumber))
 
-    print('Main Thread: Sent all handshakes. handShakeCount=', str(handShakeCount))
-
-    while (handShakeCount < N):
-        pass # find a better way to wait for the handshakes
-
-    # Send a sequence of data messages to all other processes 
-    for msgNumber in range(0, nMsgs):
-        time.sleep(random.randrange(10,100)/1000)
-        with clock_and_queue_lock:
-            lamport_clock += 1 # Incrementa o relógio antes de enviar
-            msg = (myself, msgNumber, lamport_clock) # Inclui o timestamp de Lamport
-        msgPack = pickle.dumps(msg)
-        for addrToSend in PEERS:
-            sendSocket.sendto(msgPack, (addrToSend,PEER_UDP_PORT))
-            print(f'Sent message {msgNumber} (LC: {lamport_clock})')
-
-    # Tell all processes that I have no more messages to send
-    for addrToSend in PEERS:
-        with clock_and_queue_lock:
-            lamport_clock += 1 # Incrementa o relógio ao enviar a mensagem de parada
-            msg = (-1,-1, lamport_clock) # Inclui o timestamp de Lamport
-        msgPack = pickle.dumps(msg)
-        sendSocket.sendto(msgPack, (addrToSend,PEER_UDP_PORT))
-message.txt
-9 KB
+  # Tell all processes that I have no more messages to send
+  for addrToSend in PEERS:
+    msg = (-1, -1, -1, 'stop')
+    msgPack = pickle.dumps(msg)
+    sendSocket.sendto(msgPack, (addrToSend,PEER_UDP_PORT))
